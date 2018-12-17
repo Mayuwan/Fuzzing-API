@@ -1,0 +1,6 @@
+preworks为第一阶段的项目代码，有三个包：
+1.StatisticNativeMth包：为了扫描Android源码中的native方法。(已生成android8_nativeMth)
+2.subClassTemplate包：生成代理类的java代码，结果存在Proxys文件夹中。
+  执行的主程序为SootLoad.java：需要将原始类的源代码放在一个目录下，然后生成的代理类放在了Proxys文件夹中。
+3.test包：测试生成的代理类对象的克隆和比较方法的正确性。
+          测试特殊类型——数组的克隆和比较方法的正确性

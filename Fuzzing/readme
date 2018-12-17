@@ -1,0 +1,12 @@
+结构说明：
+配置文件在/res/raw下：
+configure.txt配置各种基本类型的随机范围，数组的每维长度，字符串长度，要测试的目标方法，测试的次数
+immutable.txt是在第一阶段生成的，存放immutable类型。我这里定义的immutable是类定义为final,所有字段为final。
+
+源代码：
+nativemethod.fuzzing包下是运行目的方法的主程序
+overridedSubclass包下是第一阶段生成的代理类
+
+
+运行程序时需要注意
+修改configure.txt文件，特别是要运行的目的方法。
